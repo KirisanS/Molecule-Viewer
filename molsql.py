@@ -158,7 +158,6 @@ class Database():
           row = self.data.execute(f"""SELECT *
                                      FROM Atoms
                                      WHERE ATOM_ID = {table[i][0]};""").fetchone()
-          print(row[1])
           mol.append_atom(row[1], row[2], row[3], row[4])
 
       #Checking if it is an unique bond, then appending the information found in the joined table to the molecule
@@ -246,8 +245,6 @@ class Database():
 
       atomRow = self.data.execute("""SELECT ELEMENT_CODE
                                      FROM Atoms""").fetchall()
-      print(atomRow)
-      print(elementRow)
       element_name = {}
 
       check = 0
@@ -261,7 +258,6 @@ class Database():
           element_name[atomRow[i][0]] = "default"
 
 
-      print("HUH!?" + element_name['H'])
       return (element_name)
     
     #radial_gradients(): Create the header svg for the gradients of each atom 
