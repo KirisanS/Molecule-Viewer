@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <title> SDF Upload</title>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <h1 class="title" > Upload SDF</h1>
+          <nav>
+            <ul>
+              <li id="homePage"><a href="#"></a>Home</li>
+              <li id="elementPage"><a href="#" ></a>View Elements</li>
+              <li id="sdfPage"><a href="#"></a>Upload SDF</li>
+              <li id="moleculePage"><a href="#"></a>View Molecules</li>
+    
+            </ul>
+          </nav>
+        </div>
+        </header>
+        <p id="p2"></p>
+        <form id="formUpload" action="setFile" enctype="multipart/form-data" method="post">
+            <p>
+              <input type="file" id="sdf_file" name="filename"/>
+            </p>
+            <label for="moleculeName">Enter the Molecule Name:</label>
+            <input type="text" id="moleculeName" name="moleculeName">
+            <p>
+              <input id="sdfSubmit" type="submit" value="Upload"/>
+            </p>
+        </form>
+        <div id="nameDiv" class="visible">
+        <label for="moleculeName">Enter the Molecule Name:</label>
+        <input type="text" id="moleculeName" name="moleculeName">
+        <input id="i2" type="submit" value="Submit Name"> <br> 
+        </div>
+    </body>
+</html>

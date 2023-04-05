@@ -1,0 +1,291 @@
+
+.visible {
+    display: none;
+}
+
+.position1 {
+    position:relative;
+    text-align:center;
+    top:500px;
+}
+
+.container {
+    width:80%;
+    margin:0 auto;
+}
+
+header {
+    background:darkolivegreen;
+}
+
+header::after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+nav {
+    float:right;
+}
+
+nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+nav li {
+    display:inline-block;
+    margin:0 35px;
+    padding-top:8px;
+    color:aliceblue;
+    font-size:large;
+    cursor: pointer;
+}
+
+nav a {
+    color:aliceblue;
+    text-decoration:none;
+    text-transform:uppercase;   
+    font-size:large; 
+}
+
+nav a:hover {
+    color:#000;
+}
+
+
+table {
+    position: absolute;
+    z-index: 2;
+    left: 500px;
+    top: 100px;
+    /* transform: translate(-50%, -50%); */
+    width: 60%;
+    background: #fafafa;
+    text-align: center;
+    border-spacing:100;
+    overflow:hidden;
+    
+
+}
+
+thead {
+    position:sticky;
+    top:0px;
+}
+
+.headerLine {
+    border-top: 5px solid darkolivegreen;
+    border-bottom: 1px solid darkolivegreen;
+}
+
+tr {
+    cursor: pointer;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+th{
+    background:#66cdAA;
+}
+
+tr:nth-child(odd){
+    background-color: #eeeeee;
+}
+
+.title {
+    font-style: italic;
+    color:aliceblue;
+    position:relative;
+    display:inline;
+}
+
+.mainTitle{
+    z-index: 1;
+    text-align:center;
+    font-size:56px;
+    margin-bottom:0;
+    margin-top:200px;
+    position:relative;
+
+}
+
+.wholePage {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image: url("/backgroundSVG");
+    overflow:hidden;
+}
+
+.wholePage::after {
+    content:'';
+    width:103%;
+    height:103%;
+    background:inherit;
+    position:absolute;
+    top:0;
+    left:-10px;
+    filter:blur(5px);
+
+}
+
+.info {
+    margin:0;
+    text-align:center;
+    font-size:38px;
+    position:relative;
+    z-index: 1;
+
+}
+
+.subTitle {
+    font-style: italics;
+    color:aliceblue;
+    position:relative;
+    font-size:large;
+    display:inline;
+    border-style:solid;
+    border-color:aliceblue;
+    border-width:1px;
+    padding: 5px;
+    cursor: pointer;
+    
+    
+}
+
+p {
+    font-weight:bold;
+    font-size: large;
+    color:aliceblue;
+}
+
+.moleculeText {
+    page-break-after: always;
+    color:#66cdAA;
+    font-size:larger;
+    margin-top:0px;
+    
+}
+
+.coolButton {
+    position: relative;
+    left:15px;
+    background-color:mediumseagreen;
+    text-align:center;
+    margin:4px 2px;
+    cursor:pointer;
+    padding:15px 32px;
+}
+
+.view {
+    background-color:#66cdAA;
+    position:relative;
+    border:none;
+    color:white;
+    text-align:center;
+    display:inline-block;
+    padding:10px 10px;
+    font-size:16px;
+    cursor:pointer;
+    right:-200px;
+}
+
+.rotationButton {
+    position:relative;
+    padding: 10px 5px;
+    color:white;
+    text-align:center;
+    background-color:#66cdAA;
+    display:inline-block;
+}
+
+
+.boxView {
+    position:relative;
+    width:1000px;
+    height:1000px;
+}
+
+svg {
+    position:absolute
+}
+
+
+
+
+body {
+    margin:0;
+    padding:0;
+    background-color:darkseagreen;
+}
+
+.wrapper{
+    height:200px;
+    border: 5px solid #66cdAA;
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper .item {
+    
+    background-image: url("/backgroundSVG");
+}
+
+
+.item {
+    padding-right:150px;
+    position: relative;
+    border: 5px solid #66cdAA;
+}
+
+
+
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0,0,0,0.7);
+    position:absolute;
+    top:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.promptParagraph {
+    margin:0;
+    color:aliceblue;
+}
+
+.pHeader {
+    position:relative;
+    top:0px;
+    color:darkolivegreen;
+    background-color:darkolivegreen;
+}
+
+.modal-content {
+    width:400px;
+    height:500px;
+    background-color:aliceblue;
+    border-radius: 4px;
+    text-align: center;
+    accent-color: darkolivegreen;
+}
+
+.rotationInput {
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+
+.elementInput {
+    width: 50%;
+    display:block;
+    margin:7px auto;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <title> Elements </title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+              <h1 class="title" > Current Molecules</h1>
+              <nav>
+                <ul>
+                  <li id="homePage"><a href="#"></a>Home</li>
+                  <li id="elementPage"><a href="#" ></a>View Elements</li>
+                  <li id="sdfPage"><a href="#"></a>Upload SDF</li>
+                  <li id="moleculePage"><a href="#"></a>View Molecules</li>
+        
+                </ul>
+              </nav>
+            </div>
+            </header>
+        <p id="p3"> </p>
+        <div id="moleculeWrapper" class="wrapper"> 
+            
+        </div>
+        <div id="moleculeViewBox" class="boxView">
+
+        </div>
+        <div id="prompt" class="visible">
+        <div class="bg-modal">
+            <div class="modal-content"> 
+                <div class="pHeader">
+                    <p id="pheaderId2" class="promptParagraph"> Enter Rotation </p>
+                </div>
+                <form action="javascript:void(0);">
+                    <input id="xR" class="rotationInput" type="number" placeholder="X Rotation">
+                    <input id="yR" class="rotationInput" type="number" placeholder="Y Rotation">
+                    <input id="zR" class="rotationInput" type="number" placeholder="Z Rotation">
+                    <input id="rotationId"  class="rotationInput" type="submit" value="Rotate">
+                </form>
+            </div>
+        </div>
+
+        </div>
+    </body>
+</html>

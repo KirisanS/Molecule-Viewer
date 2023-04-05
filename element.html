@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <title> Elements </title>
+  </head>
+  <body>
+    <header>
+    <div class="container">
+      <h1 class="title" > Current Elements</h1>
+      <nav>
+        <ul>
+          <li id="homePage"><a href="#"></a>Home</li>
+          <li id="elementPage"><a href="#" ></a>View Elements</li>
+          <li id="sdfPage"><a href="#"></a>Upload SDF</li>
+          <li id="moleculePage"><a href="#"></a>View Molecules</li>
+
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <div id="tableDiv">
+    <TABLE id="elementTable">
+      <thead>
+      <TR> <TH>Element No.   </TH> <TH>Element Code   </TH> <TH> Element Name   </TH> <TH>Colour 1   </TH> <TH>Colour 2   </TH> 
+      <TH> Colour 3   </TH> <TH> Radius </TH></TR>
+      </thead>   
+    </TABLE>
+    </div>
+    <div id="paragraphDiv"> 
+    <p id="p1"></p>
+    </div>
+    <div id="buttonDiv1" class="">
+    <button id="addElement" class="coolButton" > Add Element </button>
+    <button id="removeElement" class="coolButton"> Remove Most Recent Element</button>
+    </div>
+    <button id="yes" class="visible" class="coolButton"> Yes Please!</button>
+    <button id="no" class="visible" class="coolButton"> Nevermind</button>
+    <div id="d1" class="visible">
+      
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="pHeader">
+          <p id="pheaderId" class="promptParagraph">Enter Element: </p>
+        </div>
+      <form id="f1" action="javascript:void(0);">
+        <input class="elementInput" type="number" id="elementNo" name="elementNo" placeholder="Element No."><br>
+        <input class="elementInput" type="text" id="elementCode" name="elementCode" placeholder="Element Code"><br>
+        <input class="elementInput" type="text" id="elementName" name="elementName" placeholder="Element Name"><br>
+        <input class="elementInput" type="text" id="colour1" name="colour1" placeholder="Colour 1:"><br>
+        <input class="elementInput" type="text" id="colour2" name="colour2" placeholder="Colour 2"><br>
+        <input class="elementInput" type="text" id="colour3" name="colour3" placeholder="Colour 3"><br>
+        <input class="elementInput" type="number" id="radius" name="radius" placeholder="Radius"><br><br>
+        <input id="i1" type="submit" value="Submit Element">
+    </form >
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
